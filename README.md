@@ -5,7 +5,7 @@ This repository serves as a simple example project. It demonstrates basic
 version control workflows and acts as a sandbox for learning and experimentation.
 
 ## Getting Started
-1. Clone the repository: `git clone <repo-url>`
+1. Clone the repository: `git clone https://github.com/username/bradys-files.git`
 2. Install dependencies (none required).
 3. Run tests: `pytest`
 
