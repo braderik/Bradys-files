@@ -20,3 +20,18 @@ an iPhone.
 
 Feel free to customize `perform_action` in `remote_script.py` to execute
 other commands.
+
+## SSH Remote Runner
+
+Use `run-remote.sh` to execute commands on a remote Mac over SSH. It relies on an SSH
+config entry named `mac-home` and runs `bash -lc ~/scripts/backup.sh` by default.
+
+Examples:
+
+```bash
+./run-remote.sh
+REMOTE_CMD='bash -lc "uptime && ~/scripts/backup.sh"' ./run-remote.sh
+```
+
+A `.codex-workflow.json` is provided so you can trigger the same action via Codex by
+running the "Remote Runner" workflow.
