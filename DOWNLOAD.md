@@ -86,23 +86,58 @@ cd ~/chrome-remote-desktop-setup
 
 ---
 
+## 📤 Via Google Drive
+
+If you prefer using Google Drive or GitHub is blocked:
+
+### Step 1: Download ZIP from GitHub (any computer)
+Click this link: [Download ZIP](https://github.com/braderik/Bradys-files/archive/refs/heads/claude/remote-desktop-chatgpt-setup-011CV4Ck3EcGTQfRz4HhWbyu.zip)
+
+### Step 2: Upload to Google Drive
+1. Go to https://drive.google.com
+2. Click **"New"** → **"File upload"**
+3. Select the downloaded ZIP file
+4. Right-click uploaded file → **"Get link"** → **"Anyone with the link"**
+5. Copy the link
+
+### Step 3: Download on Mac
+On your Mac, open the Google Drive link in a browser and click **"Download"**.
+
+**Or use Terminal:**
+```bash
+# Download the Google Drive helper script
+curl -o download-from-gdrive.sh "https://raw.githubusercontent.com/braderik/Bradys-files/claude/remote-desktop-chatgpt-setup-011CV4Ck3EcGTQfRz4HhWbyu/scripts/download-from-gdrive.sh"
+chmod +x download-from-gdrive.sh
+
+# Run with your Google Drive file ID
+# Example: https://drive.google.com/file/d/1A2B3C4D5E6F/view
+#          File ID is: 1A2B3C4D5E6F
+./download-from-gdrive.sh "YOUR_FILE_ID"
+```
+
+**Full instructions:** See [GOOGLE-DRIVE.md](GOOGLE-DRIVE.md)
+
+---
+
 ## ✅ After Installation
 
 Once installed, you'll find everything in `~/chrome-remote-desktop-setup/`:
 
 ```
 chrome-remote-desktop-setup/
-├── README-REMOTE-DESKTOP.md    ← Start here for overview
-├── DOWNLOAD.md                 ← This file
-├── install.sh                  ← Installer script
+├── README-REMOTE-DESKTOP.md       ← Start here for overview
+├── DOWNLOAD.md                    ← This file
+├── GOOGLE-DRIVE.md                ← Google Drive instructions
+├── install.sh                     ← Installer script
 ├── scripts/
-│   ├── setup-mac-host.sh       ← Run this first
-│   └── launch-ai-desktop.sh    ← Auto-launches ChatGPT/Claude
+│   ├── setup-mac-host.sh          ← Run this first
+│   ├── launch-ai-desktop.sh       ← Auto-launches ChatGPT/Claude
+│   └── download-from-gdrive.sh    ← Download from Google Drive
 └── docs/
-    ├── remote-ui-sop.md        ← Complete guide
-    ├── security-checklist.md   ← Security hardening
-    ├── test-plan-remote-ui.md  ← Test your setup
-    └── claude-parity-notes.md  ← Feature comparison
+    ├── remote-ui-sop.md           ← Complete guide
+    ├── security-checklist.md      ← Security hardening
+    ├── test-plan-remote-ui.md     ← Test your setup
+    └── claude-parity-notes.md     ← Feature comparison
 ```
 
 ### Run the setup:

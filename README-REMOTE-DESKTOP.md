@@ -21,18 +21,19 @@ A complete, production-ready setup that lets you:
 
 ### On Your Mac (One-Time Setup)
 
-1. **Download this repository to your Mac:**
+1. **Download and install with one command:**
    ```bash
-   # If you have git:
-   git clone https://github.com/braderik/Bradys-files.git ~/Bradys-files
-
-   # Or download ZIP and extract to ~/Bradys-files
+   curl -fsSL https://raw.githubusercontent.com/braderik/Bradys-files/claude/remote-desktop-chatgpt-setup-011CV4Ck3EcGTQfRz4HhWbyu/install.sh | bash
    ```
 
-2. **Run the automated setup:**
+   **Alternative download methods:**
+   - **Via Git:** See [DOWNLOAD.md](DOWNLOAD.md#alternative-clone-with-git)
+   - **Via Google Drive:** See [GOOGLE-DRIVE.md](GOOGLE-DRIVE.md)
+   - **Manual ZIP:** See [DOWNLOAD.md](DOWNLOAD.md#manual-download-no-terminal)
+
+2. **Run the automated setup (if not already done):**
    ```bash
-   cd ~/Bradys-files
-   chmod +x scripts/setup-mac-host.sh scripts/launch-ai-desktop.sh
+   cd ~/chrome-remote-desktop-setup
    ./scripts/setup-mac-host.sh
    ```
 
@@ -69,9 +70,13 @@ A complete, production-ready setup that lets you:
 ```
 Bradys-files/
 ├── README-REMOTE-DESKTOP.md       ← You are here
+├── DOWNLOAD.md                    ← Download options
+├── GOOGLE-DRIVE.md                ← Google Drive upload/download guide
+├── install.sh                     ← One-line installer
 ├── scripts/
 │   ├── launch-ai-desktop.sh        ← Auto-opens ChatGPT & Claude tabs
-│   └── setup-mac-host.sh           ← One-time Mac configuration
+│   ├── setup-mac-host.sh           ← One-time Mac configuration
+│   └── download-from-gdrive.sh     ← Download from Google Drive
 ├── docs/
 │   ├── remote-ui-sop.md            ← Complete setup & operations manual
 │   ├── test-plan-remote-ui.md      ← Acceptance testing checklist
