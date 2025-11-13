@@ -1,0 +1,13 @@
+[project]
+name = "bradys-files"
+version = "0.1.0"
+dependencies = [
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+
+[project.optional-dependencies]
+dev = ["pytest"]
