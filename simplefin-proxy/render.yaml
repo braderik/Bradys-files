@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: simplefin-proxy
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    envVars:
+      - key: SIMPLEFIN_TOKEN
+        sync: false        # set in Render dashboard
+      - key: API_KEY
+        sync: false        # set in Render dashboard
+      - key: SIMPLEFIN_BASE
+        value: https://beta-bridge.simplefin.org
