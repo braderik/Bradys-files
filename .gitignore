@@ -1,0 +1,17 @@
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environments
+.venv/
+
+# Coverage files
+.coverage
+
+# IDE configuration
+.vscode/
+
+# Generated artifacts
+build/
+dist/
+*.egg-info
