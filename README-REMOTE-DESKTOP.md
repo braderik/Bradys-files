@@ -92,6 +92,7 @@ Bradys-files/
 
 3. **[Test Plan](docs/test-plan-remote-ui.md)** – Validate your setup works correctly
 4. **[Claude Parity Notes](docs/claude-parity-notes.md)** – UI differences between ChatGPT and Claude
+5. **[Weekly Finance Agent Architecture](docs/weekly-finance-agent-architecture.md)** – Draft architecture for guarded banking, transfer, and ETF-investing automation
 
 ---
 
